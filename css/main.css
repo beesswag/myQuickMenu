@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Merienda|Patrick+Hand|Ropa+Sans|Russo+One');
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
 h1 ,h2, h3{
-	font-family: '3dumbregular';
+	font-family: 'Patrick Hand', cursive;
 }
 p{
-	font-family: 'action_manregular';
+	font-family: 'Courgette', cursive;
 }
 #navbar{
 	margin: 10px;
