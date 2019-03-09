@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontspack/stylesheet.css">
+</head>
+<body>
+	<div data-role="page" id="home">
+		
+		<div role="main">
+
+			<div id="navbar">
+				<a href="#mypanel"><i class="fas fa-hamburger"></a></i>
+			</div>
+
+			<div id="heading">
+				<h1>My Quick<br>Menu</h1>
+				<h3>*New Exiciting Recipes Weekly</h3>
+			</div>
+
+			<div id="grid">
+				<div class="inner-grid first"><a data-transition="slidedown" class="show-page-loading-msg" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true" href="#nocook"><span></span></a><p>No Cooking Material Whatsoever</p></div>
+				<div class="inner-grid second"><a data-transition="slidedown" href="#cook"><span></span></a><p>I  have a cooker/stove at my place</p></div>
+				<div class="inner-grid third"><a data-transition="slidedown" href="#drinks"><span></span></a><p>Drinks</p></div>
+				<div class="inner-grid fourth"><a data-transition="slidedown" href="#extra"><span></span></a><p>Extra Recipes</p></div>
+			</div>
+
+			<div id="grid-two">
+				<div class="inner-grid fifth"><a data-transition="slidedown" href="#videos"><span></span></a><p>Video Recipes</p></div>
+			</div>
+
+		</div>
+
+		<!------------------------------------------------------------------->
+		<!----------------------------PANEL---------------------------------->
+		<!------------------------------------------------------------------->
+			<div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+
+				<div>
+					<a href="#" data-rel="close"><button class="ui-btn ui-btn-inline mybtn"><i class="fas fa-home" style="color: blue"><p>Home</p></i></button></a><br>
+					<a href="#contact"><button class="ui-btn ui-btn-inline mybtn"><i class="fas fa-envelope" style="color: purple"><p>Contact Us</p></i></button></a><br>
+					<a href="#contact"><button class="ui-btn ui-btn-inline mybtn"><i class="fas fa-users" style="color: green"><p>About Us</p></i></button></a><br>
+					<a href="#" data-rel="close"><button class="ui-btn ui-btn-inline mybtn"><i class="fas fa-times" style="color: red"></i></button></a>
+				</div>
+			</div>
+		<!------------------------------------------------------------------->
+		<!----------------------------PANEL---------------------------------->
+		<!------------------------------------------------------------------->
+
+	</div>
+
+	
+
+
+	<div data-role="page" id="nocook">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<button class="ui-btn ui-btn-inline" data-rel="back"></button>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab-->
+		<div id="iframblock">
+			<iframe name="frame" src="http://www.aaronpeters.nl/blog/iframe-loading-techniques-performance?%3E"></iframe>
+		</div>
+		
+		
+	</div>
+
+	<div data-role="page" id="cook">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="http://auxxi.fhio.xyz/cook.html"></iframe>-->
+	</div>
+
+	<div data-role="page" id="drinks">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="http://auxxi.fhio.xyz/drinks.html"></iframe>-->
+	</div>
+
+	<div data-role="page" id="extra">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="http://auxxi.fhio.xyz/extra.html"></iframe>-->
+	</div>
+
+	<div data-role="page" id="contact">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="http://auxxi.fhio.xyz/contactform.html"></iframe>-->
+	</div>
+
+	<div data-role="page" id="videos">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+			</div>
+		<!--Buttons Tab-->
+		
+		<div id="grid">
+			<div class="inner-grid break"><a data-transition="flip" href="#breakfast"><span></span></a><p>Breakfast</p></div>
+			<div class="inner-grid lunch"><a data-transition="slidedown" href="#lunch"><span></span></a><p>Lunch</p></div>	
+		</div>
+
+		<div id="grid-two">
+			<div class="inner-grid dinner"><a data-transition="pop" href="#dinner"><span></span></a><p>Dinner</p></div>
+		</div>
+	</div>
+
+	<!------------------BREAKFAST PAGE------------------------->
+	<!--------------------------------------------------------->
+	<div data-role="page" id="breakfast">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="https://auxxi.fhio.xyz/breakfast.html"></iframe>-->
+	</div>
+	<!------------------BREAKFAST PAGE------------------------->
+	<!--------------------------------------------------------->
+
+
+	<!---------------------LUNCH PAGE-------------------------->
+	<!--------------------------------------------------------->
+	<div data-role="page" id="lunch">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="https://https://auxxi.fhio.xyz/lunch.html"></iframe>-->
+	</div>
+	<!---------------------LUNCH PAGE-------------------------->
+	<!--------------------------------------------------------->
+
+
+	<!--------------------DINNER PAGE-------------------------->
+	<!--------------------------------------------------------->
+	<div data-role="page" id="dinner">
+		<!--Buttons Tab-->
+			<div class="hero">
+				<i class="fas fa-chevron-left mybtn" onclick="goBack()"></i>
+				<i style="float: right;" class="fas fa-redo mybtn" onclick="refreshIframe()"></i> 
+			</div>
+		<!--Buttons Tab--
+		<iframe name="frame" src="https://auxxi.fhio.xyz/dinner.html"></iframe>-->
+	</div>
+	<!--------------------DINNER PAGE-------------------------->
+	<!--------------------------------------------------------->
+
+	
+	<script src="js/back.js"></script>
+	<script src="js/refresh.js"></script>
+	
+</body>
+</html>

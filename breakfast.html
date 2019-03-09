@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breakfast</title>
+
+	<!--Bootsrat 4 CSS CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Bootsrat 4 CSS CDN-->
+
+	<!--Bootstrap 4 JavaScript CDN-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!--Bootstrap 4 JavaScript CDN-->
+	
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Audiowide|Bowlby+One+SC|Hanalei+Fill|Monoton|Rock+Salt');
+		body{
+			background-position: center;
+			background-size: cover;
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("images/break.jpg");
+			background-repeat: no-repeat;
+			height: 100%;
+			//background-color: pink;
+		}
+		.pageframes{
+			border: 0px solid transparent;
+			height: 500px;
+		}
+		iframe{
+			width: 750px;
+			height: 800px;
+		}
+		#header h1{
+			font-family: 'Monoton', cursive;
+			color: white;
+			font-size: 100px;
+		}
+		#frameblock{
+			margin: 50px;
+			margin-bottom: 40px;
+			background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9));
+			border-radius: 30px;
+			padding: 50px;
+			font-family: 'Audiowide', cursive;
+			color: white;
+		}
+		#frameblock img{
+			width: 400px;
+			height: 400px;
+		}
+		h1{
+			font-size: 4rem;
+		}
+		p{
+			font-size: 2rem;
+		}
+		.mybtn{
+			color: white;
+			font-size: 2.5rem;
+			background-color: blue;
+			width: 33%;
+			border-radius: 20px;
+		}
+		.mybtn:focus{
+			outline: none;
+		}
+		.image-block{
+			margin: 20px;
+			border-radius: 30px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="header">
+		<h1 class="text-center">Breakfast</h1>
+	</div>
+	
+	<!--------------------------------------------------------------------------->
+	<!--------------------------------MODALS------------------------------------->
+	<!--------------------------------------------------------------------------->
+
+	<!-- Modal Video 1 -->
+		<div class="modal fade mymodal" id="video1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe src="https://www.youtube.com/embed/f0yOskqCvRA" class="col-xl-12 text-center pageframes" allowfullscreen></iframe>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 1 -->
+
+	<!-- Modal Video 2 -->
+		<div class="modal fade mymodal" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-xl" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe src="https://www.youtube.com/embed/JceGMNG7rpU" allowfullscreen class="col-xl-12 text-center pageframes"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 2 -->
+
+	<!-- Modal Video 3 -->
+		<div class="modal fade mymodal" id="video3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-xl" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe width="727" height="409" src="https://www.youtube.com/embed/fL8MhQjcSq4" allowfullscreen class="col-xl-12 text-center pageframes"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 3 -->
+
+	<!-- Modal Video 4 -->
+		<div class="modal fade mymodal" id="video4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-xl" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe src="https://www.youtube.com/embed/LWuuCndtJr0" allowfullscreen class="col-xl-12 text-center pageframes"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 4 -->
+
+	<!-- Modal Video 5 -->
+		<div class="modal fade mymodal" id="video5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe src="https://www.youtube.com/embed/TdlP7Gnr1dU" class="col-xl-12 text-center pageframes"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 5 -->
+
+	<!-- Modal Video 6 -->
+		<div class="modal fade" id="video6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <iframe src="https://www.youtube.com/embed/BLcgsCElECE" class="col-xl-12 text-center pageframes"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- Modal Video 6 -->
+
+	<!--------------------------------------------------------------------------->
+	<!--------------------------------MODALS------------------------------------->
+	<!--------------------------------------------------------------------------->
+
+	<div id="frameblock" class="text-center">
+		<h1>Monte Cristo Sandwich</h1>
+		<p>Start your morning with a simple sandwich that<br>is tastful and filling</p>
+		<img src="images/breakfast/mc.jpg" class="col-xl-12 image-block">
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video1">Watch Video</button>
+	</div>
+
+	<div id="frameblock" class="text-center">
+		<h1>Spanish Omelette</h1>
+		<p>Potatoes, egg, chesse, ham, Make yourself<br>a breakfast that is simple, filling and balanced.</p>
+		<img src="images/breakfast/so.jpg" class="image-block">
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video2">Watch Video</button>
+	</div>
+
+	<div id="frameblock" class="text-center">
+		<h1>Bacon And Eggs French Toast</h1>
+		<p>The ultimate American looking breakfast sandwich<br>Need i say more</p>
+		<img src="images/breakfast/beft.jpg" class="col-xl-12 image-block">
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video3">Watch Video</button>
+	</div>
+
+	<div id="frameblock" class="text-center">
+		<h1>Pancakes</h1>
+		<p>You cant go wrong with this bad boy<br>Treat yourself to a breakfast regular</p>
+		<img src="images/breakfast/pan.jpg" class="col-xl-12 image-block">
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video4">Watch Video</button>
+	</div>
+
+	<div id="frameblock" class="text-center">
+		<h1>Omelette Sandwich</h1>
+		<p>You hear breakfast and the word sandwich is always almost heard too<br>Healthy, quick, simple, easy</p>
+		<img src="images/breakfast/oms.jpg" class="col-xl-12 image-block">
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video5">Watch Video</button>
+		<!-- Button trigger modal -->
+	</div>
+
+	<div id="frameblock" class="text-center">
+		<h1>Omelette</h1>
+		<p>Seulment des oeufs<br></p>
+		<img src="images/breakfast/om.jpg" class="col-xl-12 image-block">
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-default mybtn col-sm-12" data-toggle="modal" data-target="#video6">Watch Video</button>
+		<!-- Button trigger modal -->
+	</div>
+	
+
+	<script>
+		$('.mymodal').on('hide.bs.modal', function(e) {    
+		    var $if = $(e.delegateTarget).find('iframe');
+		    var src = $if.attr("src");
+		    $if.attr("src", '/empty.html');
+		    $if.attr("src", src);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10"
+    version     = "1.0.1" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>My CampusMenu</name>
+	<icon src="images/icon.png" />
+
+  <description>
+    Are you a college student?
+    Are you always busy?
+    Want suggestions for quick easy meals?
+    Check Out My CampusMenu
+    PS: Not only for College Students
+  </description>
+
+  <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+  </feature>
+
+  <!--<feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.SplashScreen" />
+  </feature>-->
+
+  <access origin="*"/>
+
+	<plugin name="cordova-plugin-whitelist"/>
+	<allow-intent href="http://*/*"/>
+	<allow-intent href="https://*/*"/>
+	<allow-intent href="tel:*"/>
+	<allow-intent href="sms:*"/>
+	<allow-intent href="mailto:*"/>
+	<allow-intent href="geo:*"/>
+	<platform name="android">
+	  <allow-intent href="market:*"/>
+	</platform>
+	<platform name="ios">
+	  <allow-intent href="itms:*"/>
+	  <allow-intent href="itms-apps:*"/>
+  	</platform>
+
+  <author href="https://build.phonegap.com" email="tfpdlmovies@gmail.com"></author>
+
+  <!--<gap:plugin name="org.apache.cordova.splashscreen"/>
+
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="50000"/>
+
+  <gap:splash src="splash.png"/>-->
+
+
+
+</widget>
