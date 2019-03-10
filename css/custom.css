@@ -118,12 +118,12 @@ li{
 
 /*******************************************************/
 /*********************COOK PAGE************************/
-.centered{
+/*.centered{
 	position: relative;
 	top: 50%;
 	//left: 50%;
 	//transform: translate(-50%,-50%);
-}
+}*/
 #cook-grid{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
