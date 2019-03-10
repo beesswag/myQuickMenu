@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Merienda|Patrick+Hand|Ropa+Sans|Russo+One');
+
+div#load_screen{
+	background: #58d8f6;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+}
+div#load_screen > div#loading{
+	/*color:white;
+	width:120px;
+	height:24px;
+	margin: 300px auto;*/
+  	position:absolute;
+  	background-color:#58d8f6; 
+  	top:50%;
+  	left:50%;
+  	transform: translate(-50%,-50%);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*******************************************************/
+/******************NO COOK PAGE************************/
+/*****************************************************/
+.searchtab{
+	margin:20px;
+}
+.searchtab input[type='text']{
+	border: 1px solid;
+}
+.searchtab:focus{
+	outline: none;
+}
+#box{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 10px;
+	grid-gap: 50px;
+}
+.inner-box{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+#box>div{
+	border-radius: 20px;
+}
+li:nth-child(odd){
+	background-color: coral;
+}
+li:nth-child(even){
+	background-color: #78afed;
+}
+li{
+	border-radius: 20px;
+	margin-bottom: 30px;
+	list-style-type: none;
+}
+.inner-box h1{
+	height: 200px;
+	margin:20px;
+	border-radius: 50px;
+	//background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+	background-position: center;
+	background-size: cover;
+}
+.inner-box h3{
+	text-align: center;
+	color: white;
+	font-family: 'Merienda', cursive;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.inner-box p{
+	background-color: transparent;
+	margin: 10px;
+	border-radius: 50px;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Merienda', cursive;
+}
+#one{
+	background-image: url('../images/croissant.jpg');
+}
+#two{
+	background-image: url('../images/bbs.jpg');
+}
+#three{
+	background-image: url('../images/eggsaladsandwich.jpg');
+}
+#four{
+	background-image: url('../images/eggsalad.jpg');
+}
+#nineteen{
+	background-image: url('../images/yogurtyellow.jpg');
+}
+#twenty{
+	background-image: url('../images/yogurtohlala.jpg');
+}
+#twentyone{
+	background-image: url('../images/tuna.jpg');
+}
+
+
+/*******************************************************/
+/******************NO COOK PAGE************************/
+/*****************************************************/
