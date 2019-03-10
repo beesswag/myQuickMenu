@@ -134,10 +134,11 @@ li{
 	height: 200px;
 	border-radius: 10px;
 	position: relative;
+	margin-bottom: 20px;
 }
 #cook-grid p{
 	text-align: center;
-	padding: 50px;
+	padding: 5px;
 	color: white;
 }
 #cook-grid > div a span{
