@@ -221,7 +221,7 @@ li{
 }
 #g8{
 	grid-column: span 2;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpeg');
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -233,7 +233,7 @@ li{
 }
 #g10{
 	grid-column: span 4;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpeg');
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpg');
 	background-position: center;
 	background-size: cover;
 }
