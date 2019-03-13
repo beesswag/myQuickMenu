@@ -25,6 +25,18 @@ div#load_screen > div#loading{
 	padding: 0px;
 	box-sizing: border-box;
 }
+#head{
+	height: 100px;
+	background-color: pink;
+	text-align: center;
+	padding: 30px;
+	margin: 20px;
+}
+#head button{
+	background-color: inherit;
+	border-radius: 5px;
+	border: 1px solid pink;
+}
 /*******************************************************/
 /******************NO COOK PAGE************************/
 /*****************************************************/
