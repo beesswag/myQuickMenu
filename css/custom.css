@@ -99,25 +99,25 @@ li{
 	font-family: 'Merienda', cursive;
 }
 #one{
-	background-image: url('../images/croissant.jpg');
+	background-image: url('../images/nocook/croissant.jpg');
 }
 #two{
-	background-image: url('../images/bbs.jpg');
+	background-image: url('../images/nocook/bbs.jpg');
 }
 #three{
-	background-image: url('../images/eggsaladsandwich.jpg');
+	background-image: url('../images/nocook/eggsaladsandwich.jpg');
 }
 #four{
-	background-image: url('../images/eggsalad.jpg');
+	background-image: url('../images/nocook/eggsalad.jpg');
 }
 #nineteen{
-	background-image: url('../images/yogurtyellow.jpg');
+	background-image: url('../images/nocook/yogurtyellow.jpg');
 }
 #twenty{
-	background-image: url('../images/yogurtohlala.jpg');
+	background-image: url('../images/nocook/yogurtohlala.jpg');
 }
 #twentyone{
-	background-image: url('../images/tuna.jpg');
+	background-image: url('../images/nocook/tuna.jpg');
 }
 
 
@@ -221,19 +221,19 @@ li{
 }
 #g8{
 	grid-column: span 2;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/salad.jpeg');
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpeg');
 	background-position: center;
 	background-size: cover;
 }
 #g9{
 	grid-column: span 2;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/salad.jpeg');
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpg');
 	background-position: center;
 	background-size: cover;
 }
 #g10{
 	grid-column: span 4;
-	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/salad.jpeg');
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/breakfast/so.jpeg');
 	background-position: center;
 	background-size: cover;
 }
