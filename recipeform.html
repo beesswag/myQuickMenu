@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Recipe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Bootsrap 4 CSS CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Bootsrap 4 CSS CDN-->
+
+	<!--Bootsrap 4 JS CDN-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!--Bootsrap 4 JS CDN-->
+
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+
+	<style>
+		
+		body{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: red;
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("images/forms/recipe.jpeg");
+		}
+		.form{
+			margin-top: 10px;
+		}
+		.recipe h5{
+			text-align: center;
+			color: white;
+			padding: 10px;
+		}
+		.recipe p{
+			color: white;
+			padding: 5px;
+		}
+		.recipe input{
+			margin-bottom: 20px;
+			border-radius: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+		input:focus{
+			outline: none;
+		}
+		input[type="file"]{
+			width: 50%;
+		}
+		textarea{
+			text-align: center;
+			padding: 20px;
+		}
+		#instagram{
+			background-image: url("images/forms/instagram.svg");
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: 20px;
+		}
+		#facebook{
+			background-image: url("images/forms/facebook.svg");
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: 20px;
+		}
+		#twitter{
+			background-image: url("images/forms/twitter.svg");
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: 20px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<section class="recipe">
+		
+		<div class="col-xl-12 text-center form">
+			<form action="https://getform.io/f/85e43a9a-02ba-48ed-bf36-6083a79be783" method="POST" enctype="multipart/form-data">
+
+				<input type="text" name="" placeholder="Your Name" required=""><br>
+				<input type="text" name="" placeholder="Recipe Name" required=""><br>
+				<input type="email" name="" placeholder="E-mail" required="">
+
+				<h5>Recipe Type Choose One</h5>
+
+				<input type="radio" id="nocook" name="type"><label for="male"><p>No Cook</p></label>
+				<input type="radio" id="cook" name="type"><label for="female"><p>Cook</p></label>
+				<input type="radio" id=drinks name="type"><label for="female"><p>Drinks</p></label><br>
+				<input type="text" name="" id="instagram" placeholder="Instagram Handle"><br>
+				<input type="text" name="" id="twitter" placeholder="Twitter Handle"><br>
+				<input type="text" name="" id="facebook" placeholder="Facebook Name"><br>
+				<p>Recipe Instructions</p>
+				<textarea rows="5" cols="30"placeholder="Instructions"></textarea>
+				<p>Upload Picture of Prepared Recipe</p>
+				<input type="file" name="file"><br>
+				<input type="submit" value="Submit Recipe">
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>
