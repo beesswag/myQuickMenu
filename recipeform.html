@@ -18,108 +18,99 @@
 	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
 
 	<style>
-		
+	@import url('https://fonts.googleapis.com/css?family=Courgette|Merienda|Patrick+Hand|Ropa+Sans|Russo+One');
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family: 'Russo One', cursive;
+		}
+		input:focus {
+		    outline: none;
+		}
 		body{
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("images/forms/contact.jpeg");
+			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			background-repeat: no-repeat;
-			background-color: red;
-			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("images/forms/recipe.jpeg");
+			width: 100%;
 		}
 		.form{
-			margin-top: 10px;
+			margin-top: 50px;
 		}
-		.recipe h5{
-			text-align: center;
-			color: white;
-			padding: 10px;
-		}
-		.recipe p{
-			color: white;
-			padding: 5px;
-		}
-		.recipe input{
-			margin-bottom: 20px;
+		.form input[type="text"],[type="email"]{
 			border-radius: 10px;
+			border: 2px solid purple;
 			padding: 10px;
+			margin-bottom: 10px;
 			text-align: center;
 		}
-		input:focus{
-			outline: none;
-		}
-		input[type="file"]{
-			width: 50%;
-		}
-		textarea{
+		.form textarea{
+			border-radius: 10px;
+			border: 2px solid purple;
 			text-align: center;
 			padding: 20px;
 		}
-		#instagram{
-			background-image: url("images/forms/instagram.svg");
-			background-repeat: no-repeat;
-			background-position: right;
-			background-size: 20px;
+		textarea:focus{
+			outline: none;
 		}
-		#facebook{
-			background-image: url("images/forms/facebook.svg");
-			background-repeat: no-repeat;
-			background-position: right;
-			background-size: 20px;
+		.form input[type="submit"]{
+			border-radius: 10px;
+			font-size: 30px;
+			padding: 10px;
+			border: 2px solid purple;
+			background-color: purple;
+			color: white;
 		}
-		#twitter{
-			background-image: url("images/forms/twitter.svg");
-			background-repeat: no-repeat;
-			background-position: right;
-			background-size: 20px;
+		.form label{
+			color: white;
+			padding: 10px;
+		}
+		h1{
+			padding: 20px;
+			color: white;
+		}
+		p{
+			color: white;
+		}
+		#fileupload{
+			font-size: 10px;
+			margin: 20px;
 		}
 	</style>
-	
 </head>
+
 <body>
 
-	<!--<form action="https://getform.io/f/85e43a9a-02ba-48ed-bf36-6083a79be783" method="POST" enctype="multipart/form-data">
-
-    	<input type="text" name="name">
-    	<input type="email" name="email">
-    	<input type="tel" name="tel">
-    	<input type="file" name="file">
-    	<button type="submit">Send</button>
-
-	</form>-->
-
-	<section class="recipe">
-		
-		<div class="col-xl-12 text-center form">
-			<form action="https://getform.io/f/85e43a9a-02ba-48ed-bf36-6083a79be783" method="POST" enctype="multipart/form-data">
-
-				<input type="text" name="name">
-			    <input type="email" name="email">
-			    <input type="tel" name="tel">
-			    <input type="file" name="file">
-			    <button type="submit">Send</button>
-
-				<!--<input type="text" name="name" placeholder="Your Name" required=""><br>
-				<input type="text" name="recipe" placeholder="Recipe Name" required=""><br>
-				<input type="email" name="email" placeholder="E-mail" required="">
-				<h5>Recipe Type Choose One</h5>
-				<input type="radio" name="nocook"><label><p>No Cook</p></label>
-				<input type="radio" name="cook"><label><p>Cook</p></label>
-				<input type="radio" name="drinks"><label><p>Drinks</p></label><br>
-				<h5>Social Media (Optional)</h5>
-				<input type="text" name="instagram" id="instagram" placeholder="Instagram Handle"><br>
-				<input type="text" name="twitter" id="twitter" placeholder="Twitter Handle"><br>
-				<input type="text" name="facebook" id="facebook" placeholder="Facebook Name"><br>
-				<p>Recipe Instructions</p>
-				<textarea name="message" type="text" rows="5" cols="30"placeholder="Instructions"></textarea>
-				<p>Upload Picture of Prepared Recipe</p>
-				<input type="file" name="file"><br>
-				<button type="submit">Submit Recipe</button>
+	<div class="col-md-12 text-center contactpage">
+		<h1 class="col-xl-12 text-center">Submit Recipe</h1>
+		<p>Send us your recipe and stand a chance of it getting published</p>
+			<form accept-charset="UTF-8" action="https://usebasin.com/f/84c6e9521c18" enctype="multipart/form-data" method="POST" class="form">
+			    <input type="text" name="name" placeholder="Your Name" required=""><br>
+			    <input type="text" name="recipe" placeholder="Recipe Name" required=""><br>
+			    <input type="email" id="email" name="email" placeholder="Your E-mail" required=""><br>
+			    <p>Choose One Type</p>
+			    <input type="radio" name="nocook"><label>No Cook</label>
+			    <input type="radio" name="nocook"><label>Cook</label>
+			    <input type="radio" name="nocook"><label>Drinks</label><br>
+				<textarea name="message" type="text" rows="10" placeholder="Recipe Instructions" required=""></textarea><br>
 				
-				<input type="hidden" name="_next" value="https://beesswag.github.io/myQuickMenu/contactform.html">
-				<input type="hidden" name="_captcha" value="false"-->>
+				<div id="fileupload">
+					<p style="font-size: 20px;">Multiple Files</p>
+					<input type="file" id="attachments" name="attachments[]" multiple required style="margin-bottom: 30px;">
+					<p style="font-size: 20px;">Single File</p>
+					<input type="file" id="resume" name="resume" style="margin-bottom: 30px;">
+				</div>
+				
+				<p>Social Media (Optional)</p>
+				<img src="images/forms/instagram.svg" style="height: 50px;width: 20px;margin: 10px"><input type="text" name="instagram" placeholder="Instagram Handle"><br>
+				<img src="images/forms/twitter.svg" style="height: 50px;width: 20px;margin: 10px"><input type="text" name="twitter" placeholder="Twitter Handle"><br>
+				<img src="images/forms/facebook.svg" style="height: 50px;width: 20px;margin: 10px"><input type="text" name="facebook" placeholder="Facebook"><br>
+			    <input type="submit" value="Send" style="margin-bottom: 20px;"></input><br>
+			    <input type="hidden" name="_next" value="https://beesswag.github.io/myQuickMenu/contactform.html">
+				<input type="hidden" name="_captcha" value="false">
 			</form>
-		</div>
-	</section>
+	</div>
 
 </body>
 </html>

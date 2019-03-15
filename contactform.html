@@ -10,21 +10,73 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
-
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Courgette|Merienda|Patrick+Hand|Ropa+Sans|Russo+One');
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family: 'Russo One', cursive;
+		}
+		input:focus {
+		    outline: none;
+		}
+		body{
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("images/forms/contact.jpeg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			height: 100vh;
+			width: 100%;
+		}
+		.form{
+			margin-top: 50px;
+		}
+		.form input[type="text"],[type="email"]{
+			border-radius: 10px;
+			border: 2px solid purple;
+			padding: 10px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		.form textarea{
+			border-radius: 10px;
+			border: 2px solid purple;
+			text-align: center;
+			padding: 20px;
+		}
+		textarea:focus{
+			outline: none;
+		}
+		.form input[type="submit"]{
+			border-radius: 10px;
+			font-size: 30px;
+			padding: 10px;
+			border: 2px solid purple;
+			background-color: purple;
+			color: white;
+		}
+		h1{
+			padding: 20px;
+			color: white;
+		}
+		p{
+			color: white;
+		}
+	</style>
 </head>
 <body>
 	<div class="col-md-12 text-center contactpage">
 		<h1 class="col-xl-12 text-center">Contact Us</h1>
-
-		<div class="col-md-12 text-center form">
-			<form action="https://formspree.io/tfpdlmovies@gmail.com" method="POST">
-			  <input type="text" name="name" class="col-sm-12" placeholder="Name" required="">
-			  <input type="email" name="_replyto" class="col-sm-12" placeholder="Email" required="">
-			  <textarea rows="5" cols="12" class="col-sm-12" placeholder="Message"></textarea>
-			  <input type="submit" value="Send" class="col-sm-12">
+		<p>Got a message for us?<br>Contact Us and We'll Look Into It</p>
+			<form class="col-xl-12 form" action=" https://formsubmit.co/pigeonpoleinc@gmail.com " method="POST">
+			    <input type="text" name="name" placeholder="Your Name" required=""><br>
+			    <input type="email" name="email" placeholder="Your E-mail" required=""><br>
+				<textarea name="message" type="text" rows="10" placeholder="Message" required=""></textarea><br>
+			    <input type="submit" value="Send"></input>
+			    <input type="hidden" name="_next" value="https://beesswag.github.io/myQuickMenu/contactform.html">
+				<input type="hidden" name="_captcha" value="false">
 			</form>
-		</div>
 	</div>
 </body>
 </html>
