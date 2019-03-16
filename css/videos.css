@@ -1,0 +1,142 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	}
+h1 ,h2, h3{
+	font-family: 'Courgette', cursive;
+}
+p{
+	font-family: 'Courgette', cursive;
+}
+#navbar{
+	margin: 10px;
+	float: left;
+	font-size: 20px;
+}
+#navbar a{
+	text-decoration: none;
+	color: coral;
+}
+#heading{
+	text-align: center;
+	padding: 50px;
+	color: black;
+}
+#grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 5px; 
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+#grid>div{
+	grid-column: span 1;
+	height: 200px;
+	border-radius: 20px;
+	background-color: pink;
+}
+#content{
+	margin: 10px;
+	display: grid;
+	grid-template-columns: repeat (3,1fr);
+	grid-gap: 50px;
+}
+#content>div{
+	grid-column: span 3
+	height:100px;
+	margin-bottom: 50px;
+}
+#content a{
+	text-align: center;
+	text-decoration: none;
+}
+.overlay{
+	text-align: center;
+	color: white;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-radius: 50px;
+	margin-bottom: 30px;
+	background-position: center;
+	background-size: cover;
+}
+.overlay p{
+	padding: 20px;
+}
+.block-head{
+	font-size: 50px;
+}
+.linkbtn{
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.links-page{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/down.jpg');
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	text-transform: uppercase;
+	font-size: 20px;
+	height: 100vh;
+	color: white;
+}
+.links-page p{
+	padding: 5px;
+	margin:10px;
+}
+#b1{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/so.jpg');
+	
+}
+#b2{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/om.jpg');
+}
+#b3{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/pan.jpg');
+}
+#b4{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/beft.jpg');
+}
+#b5{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/mc.jpg');
+}
+#b6{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/om.jpg');
+}
+#b7{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/om.jpg');
+}
+#b8{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/oms.jpg');
+}
+.searchtab{
+	margin:20px;
+}
+.searchtab input[type='text']{
+	border: 1px solid;
+}
+.searchtab:focus{
+	outline: none;
+}
+#box{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 10px;
+	grid-gap: 50px;
+}
+.inner-box{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+#box>div{
+	border-radius: 20px;
+}
+li{
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
