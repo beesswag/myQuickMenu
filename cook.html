@@ -4,7 +4,7 @@
 	<title>Cook</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	
 
 	<!--Bootsrap 4 CSS CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,8 +22,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!--Bootsrap 4 JS CDN-->
-
-
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.jquery.mobile-1.4.5">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
 	<div id="load_screen">
@@ -39,7 +42,7 @@
 		
 		<div id="cook-grid">
 			
-			<div id="g1"><p>Potato and egg scramble</p><a href="#" data-toggle="modal" data-target="#m1"><span></span></a></div>
+			<div id="g1"><p>Potato and egg scramble</p><a href="#test" data-transition="slideup"><span></span></a></div>
 
 			<div id="g2"><p>Cinnamon french toast</p><a href="#" data-toggle="modal" data-target="#m2"><span></span></a></div>
 
@@ -76,6 +79,13 @@
 
 	<!------------------------------------------------------------------------------------------------------------------------------------>
 	<!-----------------------------------------------------------MODALS------------------------------------------------------------------->
+
+	<div data-role="page" id="test">
+		<p><img src="images/cook/pes.jpg"></p>
+	    <p>Peel 3 medium sized potatoes and cut into small pieces/chunks</p>
+	   	<p>Add the potatoes, onions and red pepper to a pan on medium heat.</p>
+     	<p> Cook for 7 to 8 mins until potatoes are tender and golden brown</p>
+	</div>
 
 	<div class="modal" tabindex="-1" role="dialog" id="m1">
 	  <div class="modal-dialog" role="document">
