@@ -153,8 +153,8 @@ li{
     align-items: center;*/
 }
 .swiper-slide img{
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	margin: auto;
 	padding: 20px;
 }
@@ -165,8 +165,8 @@ li{
 	font-size: 50px;
 }
 .mybtn-s{
-	margin: 20px;
-	padding: 50px;
+	margin-bottom: 20px;
+	padding: 20px;
 	border-radius: 10px;
 	color:black;
 	background-color: #ea8762;
