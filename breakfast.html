@@ -32,7 +32,7 @@
 					<div class="overlay" id="b1">
 						<p class="block-head"><h3>Spanish Omelette</h3></p>
 						<p>Potatoes, egg, chesse, ham, Make yourself<br>a breakfast that is simple, filling and balanced.</p>
-						<p><a target="_top" href="https://m.youtube.com/watch?v=JceGMNG7rpU"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p><a target="_top" href="https://www.youtube.com/watch?v=JceGMNG7rpU"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 
@@ -40,7 +40,7 @@
 					<div class="overlay" id="b2">
 						<p class="block-head"><h3>Omelette</h3></p>
 						<p>Seulment des oeufs</p>
-						<p><a target="_blank" href="https://www.youtube.com/watch?v=BLcgsCElECE" rel=external><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p><a target="_top" href="https://www.youtube.com/watch?v=BLcgsCElECE"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 				
@@ -48,7 +48,7 @@
 					<div class="overlay" id="b3">
 						<p class="block-head"><h3>Pancakes</h3></p>
 						<p>You cant go wrong with this bad boy<br>Treat yourself to a breakfast regular</p>
-						<p><a href="https://www.youtube.com/embed/LWuuCndtJr0"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p><a target="_top" href="https://www.youtube.com/embed/LWuuCndtJr0"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 
@@ -56,7 +56,7 @@
 					<div class="overlay" id="b4">
 						<p class="block-head"><h3>Bacon And Eggs French Toast</h3></p>
 						<p>The ultimate American looking breakfast sandwich<br>Need i say more</p>
-						<p><a target="_blank" href="https://www.youtube.com/watch?v=fL8MhQjcSq4"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p><a target="_top" href="https://www.youtube.com/watch?v=fL8MhQjcSq4"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 
@@ -65,15 +65,15 @@
 						<p class="block-head"><h3>Monte Cristo Sandwich</h3></p>
 						<p>Start your morning with a simple sandwich that<br>is tastful and filling</p>
 						<p>Watch YouTube Video</p>
-						<p><a href="https://www.youtube.com/embed/f0yOskqCvRA"><button class="ui-btn ui-btn-inline linkbtn">Watch</button></a></p>
+						<p><a target="_top" href="https://www.youtube.com/embed/f0yOskqCvRA"><button class="ui-btn ui-btn-inline linkbtn">Watch</button></a></p>
 					</div>
 				</li>
 
 				<li>
 					<div class="overlay" id="b6">
 						<p class="block-head"><h3>Omelette Sandwich</h3></p>
-						<p>You hear breakfast and the word sandwich is always almost heard too<br>Healthy, quick, simple, easy</p>
-						<p><a target="_blank" href="https://www80.zippyshare.com/v/6VCsbbgp/file.html" rel=external><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p>Healthy, quick, simple, easy</p>
+						<p><a target="_top" href="https://www.youtube.com/watch?v=TdlP7Gnr1dU"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 
@@ -89,7 +89,7 @@
 					<div class="overlay" id="b8">
 						<p class="block-head"><h3></h3></p>
 						<p></p>
-						<p><a href="https://m.youtube.com/watch?v=pkljCEb4Ho4"><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
+						<p><a href=""><button class="ui-btn ui-btn-inline linkbtn">Watch Video</button></a></p>
 					</div>
 				</li>
 			</div>
@@ -109,7 +109,7 @@
 		    ul = document.getElementById("breakfastlist");
 		    li = ul.getElementsByTagName("li");
 		    for (i = 0; i < li.length; i++) {
-		        a = li[i].getElementsByTagName("h3")[0];
+		        a = li[i].getElementsByTagName("h3","p")[0];
 		        txtValue = a.textContent || a.innerText;
 		        if (txtValue.toUpperCase().indexOf(filter) > -1) {
 		            li[i].style.display = "";
