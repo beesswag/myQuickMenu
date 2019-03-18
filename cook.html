@@ -4,27 +4,10 @@
 	<title>Cook</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	
-
-	<!--Bootsrap 4 CSS CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!--Bootsrap 4 CSS CDN-->
-
-	<script>
-		window.addEventListener("load", function(){
-			var load_screen = document.getElementById("load_screen");
-			document.body.removeChild(load_screen);
-		});
-	</script>
-
-	<!--Bootsrap 4 JS CDN-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!--Bootsrap 4 JS CDN-->
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.5.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css.jquery.mobile-1.4.5">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
@@ -38,7 +21,7 @@
 		<button class="col-sm-12" onclick="myReload()">Refresh Menu</button>
 	</div>
 	
-	<div>
+	<div data-role="page" id="testhome">
 		
 		<div id="cook-grid">
 			
@@ -87,7 +70,7 @@
      	<p> Cook for 7 to 8 mins until potatoes are tender and golden brown</p>
 	</div>
 
-	<div class="modal" tabindex="-1" role="dialog" id="m1">
+	<!--<div class="modal" tabindex="-1" role="dialog" id="m1">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -415,7 +398,7 @@
 	      </div>
 	    </div>
 	  </div>
-	</div>
+	</div>-->
 	
 <script>
 	function myReload(){
