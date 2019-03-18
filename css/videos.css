@@ -153,47 +153,21 @@ li{
     align-items: center;*/
 }
 .swiper-slide img{
-	width: 800px;
-	height: 700px;
+	width: 300px;
+	height: 300px;
 	margin: auto;
-	padding: 50px;
+	padding: 20px;
 }
 .swiper-slide p, h1{
-	padding: 50px;
+	padding: 20px;
 }
 .swiper-slide h1{
-	font-size: 80px;
+	font-size: 50px;
 }
 .mybtn-s{
 	margin: 20px;
 	padding: 50px;
 	border-radius: 10px;
-	font-size: 50px;
 	color:black;
 	background-color: #ea8762;
 }
-/*#slide1{
-	background-size: cover;
-	background-position: center;
-	background-image: url('../images/lunch/1.jpg');
-}
-#slide2{
-	background-size: cover;
-	background-position: center;
-	background-image: url('../images/lunch/2.png');
-}
-#slide3{
-	background-size: cover;
-	background-position: center;
-	background-image: url('../images/lunch/3.jpg');
-}
-#slide4{
-	background-size: cover;
-	background-position: center;
-	background-image: url('images/life.jpg');
-}
-#slide5{
-	background-size: cover;
-	background-position: center;
-	background-image: url('images/youth.jpg');
-}*/
