@@ -40,69 +40,6 @@ div#load_screen > div#loading{
 #head button:focus{
 	outline: none;
 }
-/********************************************************/
-/*******************RECIPE FORM*************************/
-/******************************************************/
-.recipe{
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('../images/forms/recipe1.jpeg');
-	height: 100vh;
-}
-.recipe-main{
-	padding: 50px;
-}
-.recipe h5{
-	text-align: center;
-	color: white;
-	padding: 10px;
-}
-.recipe p{
-	color: white;
-	padding: 5px;
-}
-.recipe input{
-	margin-bottom: 20px;
-	border: 1px solid yellow;
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-}
-#step{
-	margin-bottom: 20px;
-	border: 1px solid yellow;
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-}
-input:focus{
-	outline: none;
-}
-input[type="file"]{
-	width: 50%;
-}
-#instagram{
-	background-image: url('../images/forms/instagram.svg');
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 20px;
-}
-#facebook{
-	background-image: url('../images/forms/facebook.svg');
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 20px;
-}
-#twitter{
-	background-image: url('../images/forms/twitter.svg');
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: 20px;
-}
-/********************************************************/
-/*******************RECIPE FORM*************************/
-/******************************************************/
 
 
 /*******************************************************/
@@ -166,7 +103,7 @@ li{
 	text-transform: uppercase;
 	font-family: 'Merienda', cursive;
 }
-#one{
+/*#one{
 	background-image: url('../images/nocook/croissant.jpg');
 }
 #two{
@@ -242,7 +179,7 @@ li{
 /*************************************************************************/
 /**************************Menu Items************************************/
 /***********************************************************************/
-#g1{
+/*#g1{
 	grid-column: span 3;
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../images/cook/pes.jpg');
 	background-position: center;
