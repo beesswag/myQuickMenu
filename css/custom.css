@@ -104,25 +104,25 @@ li{
 	font-family: 'Merienda', cursive;
 }
 #one{
-	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001313/sample.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002281/nocook/croissant.jpg');
 }
 #two{
-	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001313/sample.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002280/nocook/bbs.jpg');
 }
 #three{
-	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001975/tuna.webp');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002278/nocook/eggsaladsandwich.jpg');
 }
 #four{
-	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001975/tuna.webp');
-}/*
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002282/nocook/eggsalad.jpg');
+}
 #nineteen{
-	background-image: url('../images/nocook/yogurtyellow.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002279/nocook/yogurtyellow.jpg');
 }
 #twenty{
-	background-image: url('../images/nocook/yogurtohlala.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002279/nocook/yogurtohlala.jpg');
 }
 #twentyone{
-	background-image: url('../images/nocook/tuna.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553002278/nocook/tuna.webp');
 }
 
 
