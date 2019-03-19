@@ -103,18 +103,18 @@ li{
 	text-transform: uppercase;
 	font-family: 'Merienda', cursive;
 }
-/*#one{
-	background-image: url('../images/nocook/croissant.jpg');
+#one{
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001313/sample.jpg');
 }
 #two{
-	background-image: url('../images/nocook/bbs.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001313/sample.jpg');
 }
 #three{
-	background-image: url('../images/nocook/eggsaladsandwich.jpg');
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001975/tuna.webp');
 }
 #four{
-	background-image: url('../images/nocook/eggsalad.jpg');
-}
+	background-image: url('https://res.cloudinary.com/dlbghvgg7/image/upload/v1553001975/tuna.webp');
+}/*
 #nineteen{
 	background-image: url('../images/nocook/yogurtyellow.jpg');
 }
