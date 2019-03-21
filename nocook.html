@@ -4,26 +4,16 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-	<script>
-		window.addEventListener("load", function(){
-			var load_screen = document.getElementById("load_screen");
-			document.body.removeChild(load_screen);
-		});
-	</script>
 </head>
 <body>
-
-	<div id="load_screen">
-		<div id="loading"><img src="images/loader.gif"></div>
-	</div>
-	<!-- Your normal document content lives here -->
-
+	
 	<div data-role="page">
 		
 		<div class="searchtab">
@@ -300,7 +290,7 @@
 			</ul>
 
 		</div>
-	</div>-->
+	</div>
 
 	<script>
 		function myFunction() {
@@ -315,7 +305,7 @@
 		        if (txtValue.toUpperCase().indexOf(filter) > -1) {
 		            li[i].style.display = "";
 		        } else {
-		            li[i].style.display = "none";
+		            li[i].style.display = "No Results Found";
 		        }
 		    }
 		}
