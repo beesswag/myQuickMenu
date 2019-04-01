@@ -10,7 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+	<link rel="stylesheet" type="text/css" href="offline-theme-default.css">
+	<link rel="stylesheet" href="offline-language-english.min.css" />
+	<script src="offline.min.js"></script>
 </head>
 <body>
 	
@@ -310,6 +312,27 @@
 		    }
 		}
 	</script>
+	
+	<script type="text/javascript">
+		Offline.options = {
+		  // to check the connection status immediatly on page load.
+		  checkOnLoad: false,
 
+		  // to monitor AJAX requests to check connection.
+		  interceptRequests: true,
+
+		  // to automatically retest periodically when the connection is down (set to false to disable).
+		  reconnect: false {
+		    // delay time in seconds to wait before rechecking.
+		    initialDelay: 3,
+
+		    // wait time in seconds between retries.
+		    delay: 10
+		  },
+
+		  // to store and attempt to remake requests which failed while the connection was down.
+		  requests: true
+		};
+	</script>
 </body>
 </html>
