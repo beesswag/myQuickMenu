@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>	
+
+	<script>
+		window.addEventListener("load", function(){
+			var load_screen = document.getElementById("load_screen");
+			document.body.removeChild(load_screen);
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" type="text/css" href="css/videos.css">
+</head>
+<body>
+
+	<div id="load_screen">
+		<div id="loading"><img src="images/loader.gif"></div>
+	</div>
+
+	<div data-role="page" id="video">
+
+		<ul id="myList">
+			<a target="_blank" href="https://www.youtube.com/watch?v=SOe4bBN8Zf8"><li id="g1"><p>spanish omelette</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=dcB5VU93AII&t=98s"><li id="g2"><p>onion rings</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=JceGMNG7rpU"><li id="g3"><p>pancakes</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=l_sYkDE5OH0"><li id="g4"><p>omelette</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=BFrkRFgHLVk"><li id="g5"><p>lasagna</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=lSsyZHcasmk"><li id="g6"><p>omelette sandwich</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/embed/f0yOskqCvRA"><li id="g7"><p>monte cristo sandwich</p></li></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=IASCuY7WTrQ"><li id="g8"><p>prawns</p></li></a>
+		</ul>
+
+	</div>
+
+</body>
+</html>
