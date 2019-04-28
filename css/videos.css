@@ -1,172 +1,96 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Bowlby+One+SC|Hanalei+Fill|Monoton|Rock+Salt');
 *{
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
-	}
+}
 h1 ,h2, h3{
 	font-family: 'Saira Extra Condensed', sans-serif;
+	text-align: center;
+	color: white;
 }
 p{
 	font-family: 'Saira Extra Condensed', sans-serif;
-}
-#navbar{
-	margin: 10px;
-	float: left;
-	font-size: 20px;
-}
-#navbar a{
-	text-decoration: none;
-	color: coral;
-}
-#heading{
-	text-align: center;
-	padding: 50px;
-	color: black;
-}
-#grid{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-gap: 5px; 
-	justify-content: center;
-	align-items: center;
-	margin: 10px;
-}
-#grid>div{
-	grid-column: span 1;
-	height: 200px;
-	border-radius: 20px;
-	background-color: pink;
-}
-#content{
-	margin: 10px;
-	display: grid;
-	grid-template-columns: repeat (3,1fr);
-	grid-gap: 50px;
-}
-#content>div{
-	grid-column: span 3
-	height:100px;
-	margin-bottom: 50px;
-}
-#content a{
-	text-align: center;
-	text-decoration: none;
-}
-.overlay{
-	text-align: center;
-	color: white;
 	text-transform: uppercase;
-	font-size: 20px;
-	border-radius: 50px;
-	margin-bottom: 30px;
-	background-position: center;
-	background-size: cover;
 }
-.overlay p{
-	padding: 20px;
-}
-.block-head{
-	font-size: 50px;
-}
-.linkbtn{
-	display: inline-block;
-	border-radius: 10px;
-	font-size: 15px;
-}
-/***************************************BREAKFAST************************************/
-/***********************************************************************************/
-#b1{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/so.jpg');
+#g1{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/so.jpg');
 	
 }
-#b2{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/om.jpg');
+#g2{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/onionrings.jpg');
 }
-#b3{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/pan.jpg');
+#g3{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/pan.jpg');
 }
-#b4{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/beft.jpg');
+#g4{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/omelette.jpg');
 }
-#b5{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/mc.jpg');
+#g5{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/lasagna.jpg');
 }
-#b6{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/oms.jpg');
+#g6{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/oms.jpg');
 }
-#b7{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/om.jpg');
+#g7{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/mc.jpg');
 }
-#b8{
-	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/breakfast/oms.jpg');
+#g8{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/prawns.jpg');
 }
-.searchtab{
-	margin:20px;
+#myList a span{
+	position:absolute; 
+  	width:100%;
+  	height:100%;
+  	top:0;
+  	left: 0;
+ 	/* edit: added z-index */
+  	z-index: 1;
 }
-.searchtab input[type='text']{
-	border: 1px solid;
+#myList li {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.searchtab:focus{
-	outline: none;
-}
-#box{
+#video ul{
 	display: grid;
-	grid-template-columns: 1fr;
-	margin: 10px;
-	grid-gap: 50px;
-}
-.inner-box{
-	display: grid;
-	grid-template-columns: 1fr;
-}
-#box>div{
-	border-radius: 20px;
-}
-li{
-	border-radius: 20px;
-	margin-bottom: 10px;
-}
-
-/********************************LUNCH*******************************************/
-/*******************************************************************************/
-.swiper-container{
-    width: 100%;
-}
-.swiper-slide{
-    text-align: center;
-    font-size: 40px;
-    background: #fff;
-    /* Center slide text vertically *
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;*/
-}
-.swiper-slide img{
-	margin: auto;
-	padding: 20px;
-}
-.swiper-slide p, h1{
-	padding: 20px;
-}
-.swiper-slide h1{
-	font-size: 50px;
-}
-.mybtn-s{
-	margin: 30px;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
+	margin: 20px;
 	margin-bottom: 20px;
-	padding: 20px;
+}
+@media (max-width: 500px){
+	#video ul{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 10px;
+		margin: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 350px){
+	#video ul{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		grid-gap: 10px;
+		margin: 20px;
+		margin-bottom: 20px;
+	}
+}
+#video li{
+	grid-column: span 1;
+	height: 200px;
+	background-color: transparent;
+	text-align: center;
+	padding: 5px;
+	list-style-type: none;
 	border-radius: 10px;
-	color:black;
-	background-color: #ea8762;
+}
+#video a{
+	text-decoration: none;
+	color: white;
+}
+#video p{
+	position: relative;
+	top: 50%;
 }
