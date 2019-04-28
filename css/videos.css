@@ -12,6 +12,7 @@ h1 ,h2, h3{
 p{
 	font-family: 'Saira Extra Condensed', sans-serif;
 	text-transform: uppercase;
+	font-size: 30px;
 }
 #g1{
 	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/so.jpg');
@@ -37,6 +38,18 @@ p{
 }
 #g8{
 	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/prawns.jpg');
+}
+#g9{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/beans.jpg');
+}
+#g10{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/cordonbleu.jpg');
+}
+#g11{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/meatloaf.jpg');
+}
+#g12{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../images/steak.jpg');
 }
 #myList a span{
 	position:absolute; 
@@ -93,4 +106,87 @@ p{
 #video p{
 	position: relative;
 	top: 50%;
+}
+/************************************************************************************/
+
+#hero{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background-image: url('../images/.jpg');
+	background-position: center;
+	background-size: cover;
+}
+#grid{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 10px;
+	margin: 10px;
+	margin-top: 50px;
+}
+#grid>div{
+	grid-column: span 1;
+	height: 200px;
+	margin: 10px;
+	background-color: aqua;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#one{
+	background-image: url('../images/om.jpg');
+	background-position: center;
+	background-size: cover;
+}
+#two{
+	background-image: url('../images/oms.jpg');
+	background-position: center;
+	background-size: cover;
+}
+#three{
+	background-image: url('../images/so.jpg');
+	background-position: center;
+	background-size: cover;
+}
+/************************************************************************************/
+.slides{
+  display: none;
+  height: 500px;
+}
+img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 2.5s;
+  animation-name: slide;
+  animation-duration: 2.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
 }
